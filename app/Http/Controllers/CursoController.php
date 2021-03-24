@@ -26,6 +26,7 @@ class CursoController extends Controller
     }
 
     public function show($curso) {
+        // 'curso' => $curso Indicamos que la variable curso la busque como curso en la vista
         return view('cursos.show', ['curso' => $curso]);
         // return "Hola, Mundo, y bienvenido al curso de: $curso";
     }
